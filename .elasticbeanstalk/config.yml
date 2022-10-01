@@ -4,6 +4,7 @@ branch-defaults:
     group_suffix: null
   master:
     environment: PROD-TODO-BACKEND
+    group_suffix: null
 deploy:
   artifact: build/libs/demo-0.0.1-SNAPSHOT.jar
 global:
@@ -18,5 +19,5 @@ global:
   platform_version: null
   profile: null
   repository: null
-  sc: null
+  sc: git
   workspace_type: Application
