@@ -33,9 +33,8 @@ public class WebSecurityConfig {
 
                 .and()
                 .authorizeRequests()
-                .anyRequest().permitAll();
-//                .antMatchers("/", "/auth/**").permitAll()
-//                .anyRequest().authenticated();
+                .antMatchers("/", "/auth/**").permitAll()
+                .anyRequest().authenticated();
         http.addFilterAfter(jwtAuthenticationFilter, CorsFilter.class);
         return http.build();
     }
